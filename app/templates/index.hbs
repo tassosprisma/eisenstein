@@ -1,11 +1,14 @@
-<section class="banner bg-main-color">
+
+<!-- Banner -->
+
+<section class="banner">
   <h1>Eisenstein</h1>
   <div class="input-wrapper">
-    <input type="text" placeholder="Αναζήτηση" />
+    <input type="text" placeholder="Αναζήτηση ταινιών..." />
     <i class="fa fa-search"></i>
   </div>
   <div class="filter-container">
-    <p>23,133 movies in</p>
+    <p>{{moviesLength}} movies in</p>
     <div class="select-wrapper">
       <select>
         <option>All</option>
@@ -14,8 +17,11 @@
     </div>
   </div>
 </section>
+
+<!-- Genres -->
+
 <section class="genres">
-  <h3>Τι ταινία θες να δεις;</h3>
+  <h2>Τι ταινία θες να δεις;</h2>
   <ul>
     <li><a href="#/">Πολεμική</a></li>
     <li><a>Δράμα</a></li>

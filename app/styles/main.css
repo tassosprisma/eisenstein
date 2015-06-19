@@ -41,6 +41,11 @@ a {
   padding-bottom: 3px;
   text-decoration: none;
   font-size: 18px;
+  cursor: pointer;
+}
+a.active {
+  color: #900;
+  border-bottom-color: #900;
 }
 
 .input-wrapper {

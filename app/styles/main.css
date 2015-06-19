@@ -183,6 +183,7 @@ select {
   height: 33.333%;
   float: left;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .showcase article div {
   color: white;
@@ -208,9 +209,22 @@ select {
 }
 .showcase img {
   position: relative;
-  padding: 2%;
   box-sizing: border-box;
   height: 100%;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.showcase img:hover {
+  height: 90%;
+}
+.showcase-movie p {
+  color: white;
+  position: relative;
+  margin-top: -5px;
+}
+.showcase-movie:first-of-type p {
+  margin-top: 0;
 }
 
 /* About

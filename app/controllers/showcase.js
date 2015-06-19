@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
+// Pending backend API
 var movies = {
-
   featured: [
     {title: 'City of God', url: '/movies/City of God/cover.jpg'},
     {title: 'Come and see', url: '/movies/Come and see/cover.jpg'},
@@ -43,11 +43,6 @@ export default Ember.Controller.extend({
         showPopular: mode == 'popular',
         showNew: mode == 'new',
       });
-      /*
-      Ember.$.getJSON('/' + mode, function () {
-
-      });
-      */
       this.get('movies').clear();
       this.get('movies').pushObjects(movies[mode]);
     }

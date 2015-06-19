@@ -22,7 +22,7 @@ h3 {
   font-size: 28px;
 }
 p {
-  font-size: 15px;
+  font-size: 16px;
 }
 select {
   font-size: 15px;
@@ -195,11 +195,11 @@ select {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 0; /* Keep the background behind the content */
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
 }
 .showcase img {
   position: relative;
@@ -211,16 +211,17 @@ select {
 /* About
 ------------------------------------------------------*/
 .about {
-  height: 430px;
+  padding: 40px 0;
+  height: 350px;
 }
 
-.about ul {
-  width: 95%;
-  max-width: 1000px;
+.about h2 {
+  margin-bottom: 60px;
 }
-
 .about p {
   margin: .5em auto;
-  max-width: 800px;
+  width: 90%;
+  max-width: 750px;
   text-align: left;
+  line-height: 30px;
 }

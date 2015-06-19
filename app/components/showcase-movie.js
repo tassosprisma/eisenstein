@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         .prop("type", "text/css")
         .html("\
         ." + title + ":before {\
-          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('" +
+          background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('" +
           this.get('url') + "')\
         };")
         .appendTo("head");

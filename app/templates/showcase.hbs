@@ -24,7 +24,7 @@
   </ul>
   <div class="showcase-grid">
     {{#each movie in movies}}
-      {{showcase-movie title=movie.title url=movie.url}}
+      {{showcase-movie action="viewMovie" title=movie.title url=movie.url}}
     {{/each}}
   </div>
 </section>

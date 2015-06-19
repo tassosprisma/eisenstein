@@ -18,5 +18,13 @@ export default Ember.Component.extend({
           this.get('url') + "')\
         };")
         .appendTo("head");
+  },
+
+  actions: {
+    view: function () {
+      this.sendAction('action', {
+        id: this.get('title')
+      });
+    }
   }
 });

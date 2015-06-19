@@ -8,10 +8,10 @@
     <i class="fa fa-search"></i>
   </div>
   <div class="filter-container">
-    <p>{{moviesLength}} movies in</p>
+    <p>{{moviesLength}} ταινίες σε</p>
     <div class="select-wrapper">
       <select>
-        <option>All</option>
+        <option>Όλες</option>
       </select>
       <i class="fa fa-caret-down"></i>
     </div>
@@ -23,56 +23,22 @@
 <section class="genres">
   <h2>Τι ταινία θες να δεις;</h2>
   <ul>
-    <li><a href="#/">Πολεμική</a></li>
-    <li><a>Δράμα</a></li>
+    <li><a>Ασπρόμαυρη</a></li>
     <li><a>Ιστορική</a></li>
     <li><a>Ντοκιμαντέρ</a></li>
-    <li><a>Κοινωνική</a></li>
-    <li><a>Σοβιετική</a></li>
-    <li><a>Kωμωδία</a></li>
     <li><a>Βιογραφία</a></li>
-    <li><a>Ασπρόμαυρη</a></li>
+    <li><a>Κοινωνική</a></li>
+    <li><a href="#/">Πολεμική</a></li>
+    <li><a>Δράμα</a></li>
+    <li><a>Kωμωδία</a></li>
+    <li><a>Σοβιετική</a></li>
   </ul>
 </section>
-<section class="showcase bg-second-color">
-  <ul>
-    <li><a>Προτεινόμενες</a></li>
-    <li><a>Δημοφιλείς</a></li>
-    <li><a>Νέες προσθήκες</a></li>
-  </ul>
-  <div class="showcase-grid">
-    <div class="wrapper">
-      <article class="_1">
-        <div>1900</div>
-      </article>
-    </div>
-    <div class="wrapper">
-    <article class="_2">
-      <div>Ae Fond Kiss</div>
-    </article>
-  </div>
-    <div class="wrapper">
-    <article class="_3">
-      <div>American History X</div>
-    </article>
-  </div>
-    <div class="wrapper">
-    <article class="_4">
-      <div>Apocalypse Now</div>
-    </article>
-  </div>
-    <div class="wrapper">
-    <article class="_5">
-      <div>Bread and Roses</div>
-    </article>
-  </div>
-    <div class="wrapper">
-    <article class="_6">
-      <div>Buena Vista Social Club</div>
-    </article>
-  </div>
-  </div>
-</section>
+
+<!-- Showcase -->
+
+  {{render "showcase"}}
+
 <section class="about">
   <h2>Σχετικά με εμάς</h2>
     <p>

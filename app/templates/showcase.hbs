@@ -1,0 +1,30 @@
+<section class="showcase bg-second-color">
+  <ul>
+    <li>
+      <a id="featured-btn"
+        {{bind-attr class="showFeatued:active"}}
+        {{action "select" "featured"}}>
+          Προτεινόμενες
+      </a>
+    </li>
+    <li>
+      <a id="popular-btn"
+        {{bind-attr class="showPopular:active"}}
+        {{action "select" "popular"}}>
+          Δημοφιλείς
+      </a>
+    </li>
+    <li>
+      <a id="new-btn"
+        {{bind-attr class="showNew:active"}}
+        {{action "select" "new"}}>
+          Νέες προσθήκες
+      </a>
+    </li>
+  </ul>
+  <div class="showcase-grid">
+    {{#each movie in movies}}
+      {{showcase-movie title=movie.title url=movie.url}}
+    {{/each}}
+  </div>
+</section>

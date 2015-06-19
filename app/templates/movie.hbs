@@ -1,2 +1,26 @@
-{{title}}
-{{url}}
+<section class="banner">
+</section>
+
+<div class="grid">
+  <div class="block">
+    <img class="cover-img" {{bind-attr src="url"}}>
+  </div>
+  <div class="block">
+    <h2 class="title">{{title}} <span class="date">({{date}})</span></h2>
+    <span class="genrez">Genres:
+      {{#each genre in genres}}
+        <span class="genre">{{genre}}</span>
+      {{/each}}
+    </span>
+    <span class="tags">Tags:
+      {{#each tag in tags}}
+        <span class="tag">{{tag}}</span>
+      {{/each}}
+    </span>
+    <p class="description">{{description}}</p>
+  </div>
+  <div class="block btns">
+    <button class="trailer">Watch Trailer</button>
+    <button class="torrent">Download Torrent</button>
+  </div>
+</div>

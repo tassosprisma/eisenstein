@@ -22,9 +22,7 @@ export default Ember.Component.extend({
 
   actions: {
     view: function () {
-      this.sendAction('action', {
-        id: this.get('title')
-      });
+      this.sendAction('action', window.movies.findBy('title', this.get('title')));
     }
   }
 });

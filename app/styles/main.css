@@ -295,13 +295,21 @@ select {
   text-align: center;
   width: 100%;
 }
-.movie-wrapper .banner:before {
+.small.banner:before {
   height: 20%;
 }
-.movie-wrapper .banner {
+.small.banner {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 20%;
+}
+
+
+/* Search
+-------------------------------------------*/
+
+.search-results {
+  margin-top: 20%;
 }

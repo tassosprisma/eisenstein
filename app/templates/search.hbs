@@ -1,1 +1,7 @@
-{{outlet}}
+
+<section class="banner small"></section>
+<div class="search-results">
+  {{#each movie in movies}}
+    <div class="result">{{movie.title}}</div>
+  {{/each}}
+</div>

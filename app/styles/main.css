@@ -238,6 +238,8 @@ select {
 .about h2 {
   margin-bottom: 60px;
 }
+
+
 .about p {
   margin: .5em auto;
   width: 90%;
@@ -258,7 +260,7 @@ select {
   padding: 5px;
   border: 1px solid #e1e1e1;
   float: right;
-  margin-right: 10%;
+  margin-right: 2em;
   margin-top: 10px;
 }
 .title {
@@ -269,25 +271,29 @@ select {
 }
 .tags {
   margin: 10px 0;
+  clear: both;
+}
+.btns {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
 }
 .movie-wrapper .tags, .movie-wrapper .genrez{
   float: left;
-  width:100%;
   text-align: left;
 }
-.movie-wrapper .description {
-  clear: both;
-  text-align: left;
+.movie-wrapper img {
+  float: left;
+}
+.movie-wrapper .btns{
+  width: 100%;
 }
 .grid .block.btns {
   padding: 2em;
   box-sizing: border-box;
   text-align: center;
   width: 100%;
-}
-.grid .block {
-  float: left;
-  width: 50%;
 }
 .movie-wrapper .banner:before {
   height: 20%;
